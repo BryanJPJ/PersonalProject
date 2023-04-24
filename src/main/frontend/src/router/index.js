@@ -16,23 +16,38 @@ const router = createRouter({
     },
     {
       path: '/event',
-      name: 'events',
+      name: 'event',
       component: () => import('../views/EventsView.vue')
     },
     {
       path: '/member',
-      name: 'events',
+      name: 'member',
       component: () => import('../views/MembersView.vue')
     },
     {
       path: '/travel',
-      name: 'events',
+      name: 'travel',
       component: () => import('../views/TravelsView.vue')
     },
     {
       path: '/contact',
-      name: 'events',
+      name: 'contact',
       component: () => import('../views/ContactView.vue')
+    },
+    {
+      path: '/travelgallery',
+      name: 'travelgallery',
+      component: () => import('../views/TravelsGalleryView.vue')
+    },
+    {
+      path: '/listanuestroseventos',
+      name: 'listevents',
+      component: () => import('../views/admin/ListEventsView.vue')
+    },
+    {
+      path: '/registronuestroseventos',
+      name: 'registerevents',
+      component: () => import('../views/admin/RegisterEventsView.vue')
     },
   ]
 })
