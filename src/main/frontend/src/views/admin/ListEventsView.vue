@@ -125,7 +125,7 @@ async function deleteThis(id) {
                   class="btn btn-danger"
                   @click="deletePost(ourEvents.id)"
                 >
-                  Borrar
+                  Delete
                 </button>
                 <button
                   type="button"
@@ -134,7 +134,7 @@ async function deleteThis(id) {
                     update(ourEvents.id, ourEvents, ourEvents.imageOurEvents)
                   "
                 >
-                  Modificar
+                  Modify
                 </button>
               </p>
             </div>
